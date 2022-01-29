@@ -1,0 +1,177 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4{   
+    font-weight: 600;
+}
+
+header{
+    background: #daac00;
+}
+
+.navbar-brand img{
+    width: 75%;
+}
+
+.navbar-light .navbar-nav .nav-link { 
+    position: relative;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #000;;
+    transition: 0.9s;
+}
+
+.navbar-light .navbar-nav .nav-link:after{
+    content:'';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 250ms ;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after{
+    transform:translateX(-50%) scaleX(1) ;
+}
+
+ .hero{
+    padding: 40px 0;
+}
+
+
+.love_animals{
+    padding: 80px 0;
+}
+
+.care_services{
+    padding: 40px 0;
+}
+
+.ear_check{
+    padding: 80px 0;
+}
+
+.dogs{
+    padding:40px 0;
+}
+
+.dogs h4{
+    font-weight: 700;
+}
+
+
+.dogs .custom-btn{
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.team{
+    padding: 80px 0;
+}
+
+.team ul{
+    list-style: none;
+    font-size: 30px;
+}
+
+.team ul li a :nth-child(3n-2){
+    margin: 0 20px; 
+    font-size: 30px;
+}
+
+.services_provide{
+    padding: 80px 0;
+    background: url(../images/doggy.png)no-repeat 0 0;
+    background-size: cover;
+}
+
+.services_provide p{
+    width: 100%;
+    font-size: 30px;
+}
+
+.recent-post{
+    padding: 80px 0;
+}
+
+.recent-post .content h2{
+    font-weight: 900;
+}
+
+.recent-post .content p{
+    width: 100%;
+}
+
+.recent-post .card h3{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.recent-post h4 {
+ font-size: 20px;
+}
+
+.recent-post a {
+    font-size: 20px;
+   }
+
+.footer{
+    padding: 80px 0;
+    background: #343434;
+}
+
+.footer .content h2, h3{
+    font-size: 20px
+}
+
+.footer .content a{
+    font-size: 18px
+}
+
+.footer .content p{
+    font-size: 18px
+}
+
+
+.overlay{
+    top: 0;   
+    width: 100%;
+    height: 100%;
+  
+  }
+
+@media screen and (min-width:768px) {
+    .dogs .col-lg-4:nth-of-type(3n-1) .card{
+        margin: 20px 0;
+    }
+
+    .care_services .card img{
+        width: 275px;
+    }
+
+  
+}
+
+@media screen and (min-width:1200px) {
+    .recent-post .box .overlay {
+        position: absolute;
+    }
+
+    .dogs .col-lg-4:nth-of-type(3n-1) .card{
+        margin: 0
+    }
+}
