@@ -1,4 +1,4 @@
-$(document).ready(function () {
+  $(document).ready(function () {
   $('.box-1').on('mouseover', function () {
     // console.log('mouseover on box')
     $('.overlay').addClass('d-block');
